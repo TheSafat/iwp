@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h2>Employees Profile</h2>
+            <form action="#" method="POST">
+                <label for="name">Employee Name</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="name">Designation</label><br>
+                <input type="text" id="name" name="designation" required><br>
+                <label for="name">Salary</label><br>
+                <input type="number" id="name" name="salary" required><br>
+                <label for="name">Contact No:</label><br>
+                <input type="text" id="name" name="contact" required><br>
+                <div class="button">
+                    <button onclick="return validate()" type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function validate(){
+            let name=document.getElementById('name').value;
+            let designation=document.getElementById('designation').value;
+            let salary=document.getElementById('salary').value;
+            let contact=document.getElementById('contact').value;
+            if(name=="" || designation=="" || salary=="" || contact==""){
+                alert("All fields must be fillup");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+</html>

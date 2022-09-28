@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    height: 100px;
+    background-color: blueviolet;
+    display: flex;
+}
+
+.logo{
+    margin: auto 50px;
+}
+
+.menu ul{
+    /* list-style: none; */
+    list-style-type: none;
+    display: flex;
+}
+
+.menu ul li{
+    margin: auto 50px;
+    justify-content: right;
+}
+a{
+    text-decoration: none;
+}
+
+article{
+    padding: 10px 50px;
+}
+
+.inside-article{
+    border: 1px solid black;
+    border-radius: 5px;
+}
+h2{
+    padding: 20px 10px 0px 10px;
+}
+p{
+    padding: 10px;
+}

@@ -1,0 +1,16 @@
+<html>
+    <h2>Gallery</h2>
+    <?php
+        $con=mysqli_connect("localhost","root","","problem13db") or die;
+        $q=mysqli_query($con,"select * from gallery");
+        while($data=mysqli_fetch_assoc($q))
+        {
+    ?>
+    
+    <button>
+        <img src="save_image/<?php echo $data['image'];?>" height="300" width="250">
+            <h4> <?php echo $data['title'];?> </h4>
+    </button>
+    <?PHP } ?>
+
+</html>

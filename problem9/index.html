@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+
+<body>
+    <h2>Employees Profile</h2>
+    
+    <form action="action.php" method="POST">
+        <label for="name">Employee Name</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="name">Designation</label><br>
+        <input type="text" id="designation" name="designation" required><br>
+        <label for="name">Salary</label><br>
+        <input type="number" id="salary" name="salary" required><br>
+        <label for="name">Contact No:</label><br>
+        <input type="text" id="contact" name="contact" required><br>
+        <?php if(isset($_GET['contact_err'])){?>
+        <div>
+            <?=$_GET['contact_err']?>
+        </div>
+        <?php unset($_GET['contact_err']); } ?>
+        <div>
+            <button onclick="return validate()" type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!doctype html>
+<head>
+    <style>
+        div{
+            width:200px;
+            height:200px;
+            background-color:mediumaquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div onmouseover="over()" onmouseout="out()"> </div>
+    <h1 id="p1"><h1>
+
+    <button onclick="on()"> enter </button> <br>
+    <h1 id="p2"></h1>
+
+    <input type="text" onkeypress="press()">
+    <h1 id="p3"></h1>
+
+    <script>
+        function over(){
+            document.getElementById("p1").innerHTML="Hello World 1";
+        }
+        function out(){
+            document.getElementById("p1").innerHTML="";
+        }
+        function on(){
+            document.getElementById("p2").innerHTML="Hello World 2";
+        }
+        function press(){
+            document.getElementById("p3").innerHTML="Hello World 3";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<?php 
+    $con=mysqli_connect("localhost","root"," ","university") or die("Connection error".mysqli_connect_error($con));
+    if(isset($_POST['submit'])) 
+    { 	 
+        $title=$_POST['title'];  
+        $img=$_FILES["photo"]["name"];  
+        $tmp=$_FILES["photo"]["tmp_name"];    
+        $type=$_FILES["photo"]["type"];   
+        $extension=pathinfo($img,PATHINFO_EXTENSION);    
+        if($type=="image/jpeg" || $type=="image/png" ) 	 
+        { 	 
+            $sql="select * from gallery order by ID desc";	  	 
+            if($q=mysqli_query($con,$sql))
+            { 	  
+                $data=mysqli_fetch_assoc($q); 	 
+            }		  	 
+            $id=$data['ID']; 	 
+            $rename='img'.$id.'.'.$extension; 	 $upload='save_image/'.$rename;	        
+            mysqli_query($con, "insert into gallery(title,image)values('$title','$rename')");       
+            move_uploaded_file($tmp,$upload);	   	 
+        } 	 
+        else echo $img." is not an image"; 	     
+    }   mysqli_close($con); 
+?>
+<html>
+    <head>
+    </head>
+    <body>
+        <form action="insert_img.php" method="POST" enctype="multipart/form-data">
+            <h1>Upload an image</h1> Title:<input type="text" name="title">
+            <br><br> 
+            IMAGE:<input type="file" name="photo">
+            <br><br> 
+            <input type="submit" name="submit">
+        </form>
+    </body>
+</html>
