@@ -7,9 +7,9 @@
     7. 	Write a PHP program that will able to edit all data stored in a database containing teacher’s profile.
     8. 	Design a DHTML’s form for employee’s profile and validate all data retrieving from a form using JavaScript.
     9. 	Write a PHP program that will validate all data retrieving from a form containing employee’s profile.
-    10. 	Develop an admin panel with a demo page that will also contain security page having user name and password in the database and logout of option.
-    11. 	Write a PHP program that will store all data in a database retrieving from a form containing electronics product info.
-    12. 	Design a webpage that will show the list stored in a database containing student’s profile with a link to delete them.
-    13. 	Develop an image gallery which can show the image and also upload the image with the title.
-    14. 	Develop a web page that will insert data related to apply online for graduate admission and show that profile in another page.
-    15. 	Develop a website with a user registration process with username, password, email, name, contact no with proper php and javascript validation. The webpage can also help to login using the credentials.
+    10. Develop an admin panel with a demo page that will also contain security page having user name and password in the database and logout of option.
+    11. Write a PHP program that will store all data in a database retrieving from a form containing electronics product info.
+    12. Design a webpage that will show the list stored in a database containing student’s profile with a link to delete them.
+    13. Develop an image gallery which can show the image and also upload the image with the title.
+    14. Develop a web page that will insert data related to apply online for graduate admission and show that profile in another page.
+    15. Develop a website with a user registration process with username, password, email, name, contact no with proper php and javascript validation. The webpage can also help to login using the credentials.
